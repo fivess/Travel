@@ -1,0 +1,45 @@
+POST localhost:8080/scheduling HTTP/1.1
+Content-Type: application/json;charset=UTF-8
+
+
+{
+  "ride_id": 1,
+  "ride_date": "2018-01-01T00:00:00Z"
+}
+
+###
+GET localhost:8080/scheduling/ride/1 HTTP/1.1
+
+
+HTTP/1.1 200 OK
+
+###
+GET localhost:8080/scheduling/1/ride/1 HTTP/1.1
+
+
+
+###
+POST localhost:8080/scheduling/1/passanger/1 HTTP/1.1
+
+
+
+###
+DELETE localhost:8080/scheduling/1/passanger/1 HTTP/1.1
+
+
+###
+DELETE localhost:8080/scheduling/1/ride/1/ HTTP/1.1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
